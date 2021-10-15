@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="1101.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
+   <children>
+      <Pane layoutX="-2.0" prefHeight="145.0" prefWidth="1062.0" styleClass="head-background" stylesheets="@../styling/fullpackstyling.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="224.0" layoutY="47.0" text="Hybrid Cryptography System" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="227.0" layoutY="100.0" text="Share your files securely across the cloud" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="1041.0" layoutY="95.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="30.0" prefWidth="163.0" ripplerFill="WHITE" style="-fx-background-color: #473E98;" text="EDIT PROFILE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <VBox layoutX="-1.0" layoutY="145.0" prefHeight="438.0" prefWidth="252.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="146.0">
+         <children>
+
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0"  onMouseClicked="#home" prefHeight="30.0" prefWidth="252.0" ripplerFill="#bfadf8" text="HOME" textFill="#5b5858">
+               <VBox.margin>
+                  <Insets top="60.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0"  onMouseClicked="#uploadFiles" prefHeight="43.0" prefWidth="252.0" ripplerFill="#bfadf8" text="Upload File" textFill="#5b5858">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0"  onMouseClicked="#vieDownloads"  prefHeight="43.0" prefWidth="252.0" ripplerFill="#bfadf8" text="View Files" textFill="#5b5858">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" id="downloadRequests" graphicTextGap="10.0" onMouseClicked="#downloadRequests" prefHeight="43.0"  prefWidth="252.0" ripplerFill="#bfadf8" text="Verify Request" textFill="#5b5858">
+               <font>
+                  <Font size="13.0" />
+               </font>
+
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT"  graphicTextGap="10.0" prefHeight="43.0"  onMouseClicked="#about" prefWidth="252.0" ripplerFill="#bfadf8" text="About Us" textFill="#5b5858">
+               <font>
+                  <Font size="13.0" />
+               </font>
+
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" prefHeight="43.0"  onMouseClicked="#contact" prefWidth="252.0" ripplerFill="#bfadf8" text="Contact Us" textFill="#5b5858">
+               <font>
+                  <Font size="13.0" />
+               </font>
+
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT"  graphicTextGap="10.0" prefHeight="43.0"  onMouseClicked="#logout" prefWidth="252.0" ripplerFill="#bfadf8" text="Logout" textFill="#5b5858">
+               <font>
+                  <Font size="13.0" />
+               </font>
+
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </VBox>
+      <Pane layoutX="71.0" layoutY="44.0" prefHeight="131.0" prefWidth="142.0" style="-fx-background-color: #fff;">
+         <children>
+            <ImageView fitHeight="120.0" fitWidth="139.0" layoutX="11.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="10.0" radius="4.5" width="10.0" />
+         </effect>
+      </Pane>
+
+      <ScrollPane layoutX="251.0" layoutY="182.0" prefHeight="406.0" prefWidth="810.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="182.0">
+         <content>
+            <VBox fx:id="pnl_scroll" prefHeight="404.0" prefWidth="1023.0" spacing="20.0" style="-fx-background-color: #fff;" />
+         </content>
+      </ScrollPane>
+
+
+   </children>
+</AnchorPane>
